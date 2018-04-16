@@ -19,14 +19,14 @@
                     *ngIf='products && products.length'>
                 <thead>
                     <tr>
-                        <th>
-                        </th>
                         <th>Product</th>
-                        <th>Price</th>                 
+                        <th>Price</th>   
+                        <th>Inventory</th>               
                     </tr>
                         <tr  *ngFor = 'let product of filteredProducts'>
                             <td>{{product.name}}</td>
-                            <td>{{product.price | currency:'USD': true: '1.2-2'}}</td>
+                            <td>{{product.price | currency:'USD'}}</td>
+                            <td>{{product.inventory}}</td>
                         </tr>
       
                 </thead>

@@ -12,19 +12,17 @@ import { HttpResponse } from 'selenium-webdriver/http';
 @Injectable()
 export class ProductService{
 
-    private __productUrl = 'http://autumn-resonance-1298.getsandbox.com/products';
+    private __productUrl = 'http://localhost:8080/ProductList';
     constructor(private __http:HttpClient){}
 
     getProducts(): Observable<Iproduct[]>{
         return this.__http.get<Iproduct[]>(this.__productUrl)
-        .do(data => console.log(`productList: ${JSON.stringify(data)}`))
+        .do(data => console.log(`productList: ${JSON.stringify(data)} & url serving our data:`,this.__productUrl))
         .catch(this.handleError);
     }
 
     private handleError(err: HttpResponse){
         console.log(err.toString);
         return Observable.throw(err.toString);
-
-
     }
 }
