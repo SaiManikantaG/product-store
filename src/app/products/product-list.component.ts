@@ -33,5 +33,11 @@ export class ProductListComponent implements OnInit {
       this.products = products;
       this.filteredProducts = this.products;
     }, error => (this.errorMessage = <any>error));
+
+    var xpath = [];
+    this.__productService.getProductInitial().subscribe(result => {
+      this.products = xpath;
+      console.log(`xpath:${xpath}`);
+    });
   }
 }
