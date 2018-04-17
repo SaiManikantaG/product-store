@@ -39,7 +39,7 @@ As stated earlier this app is built to showcase how we can communicate with GET 
 
 # ProductStore
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 5.X.
 
 ## Development server
 
