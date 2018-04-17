@@ -11,7 +11,7 @@ import { HttpResponse } from 'selenium-webdriver/http';
 export class ProductService {
 
   // Create a service for the front end to use the aggregated list
-  private __productUrl = 'http://localhost:3000/ProductList';
+  private __productUrl = 'http://localhost:8080/api/productList';
   constructor(private __http: HttpClient) {}
 
   getProducts(): Observable<Iproduct[]> {
