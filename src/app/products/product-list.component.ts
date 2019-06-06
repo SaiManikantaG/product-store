@@ -34,13 +34,13 @@ export class ProductListComponent implements OnInit {
       this.filteredProducts = this.products;
     }, error => (this.errorMessage = <any>error));
 
-    // Throw it as a API endpoint????????
+    /* Throw it as a API endpoint????????
     var xpath = [];
     this.__productService.getProductInitial().subscribe(result => {
       this.products = xpath;
       console.log(`xpath:${xpath}`);
       //productApi(xpath)
-    });
+    }); */
 /* Build similiar to this?
     var productApi = function(resp) {
   

@@ -1,6 +1,45 @@
+
+# Product Store
+
+An AngularJS application that I've built to use an API endpoint resource that is running locally. This is built using boilerplate code and has lot of extra features that can be integrated and implemented easily with fewer changes.
+
+- Uses AngularJs 5
+
+## Getting Started
+
+- The App can be cloned or downloaded.
+- If downloaded, extract the folder and then go into the folder where project is residing and run 
+```
+npm install
+```
+and to start the application run
+```
+npm start
+```
+BOOM!! Magic happens, you can now see the app up and running
+
+# Points to remember to use this app
+
+As stated earlier this app is built to showcase how we can communicate with GET API endpoint that has product list of items as below for example:
+
+```
+[
+    {
+      "name": "shirt",
+      "price": 15,
+      "inventory": 12
+    },
+```
+
+- with above data provided at the endpoint, the angular app read the data and displays it in a table
+- A filter is also available to search / filter the product among the given product list and it dyamic and responsive
+
+
+------- Boilter Plate details and resources for learning are below ----------
+
 # ProductStore
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 5.X.
 
 ## Development server
 
