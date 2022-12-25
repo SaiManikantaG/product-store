@@ -9,19 +9,9 @@ import { HttpResponse } from 'selenium-webdriver/http';
 
 @Injectable()
 export class ProductService {
-  /* Throw it as a API endpoint????????
-  private __getProductsUrl = 'http://localhost:3000/product';
-  getProductInitial() {
-    return this.__http
-      .get(this.__getProductsUrl)
-      .do(data => console.log(`acquired list:${JSON.stringify(data)}url serving our data:`, this.__getProductsUrl))
-      .catch(this.handleError);
-  }
-  Throw it as a API endpoint????????
-  */ 
 
   // Create a service for the front end to use the aggregated list
-  private __productUrl = 'http://localhost:3000/ProductList';
+  private __productUrl = 'http://localhost:8080/api/productList';
   constructor(private __http: HttpClient) {}
 
   getProducts(): Observable<Iproduct[]> {
